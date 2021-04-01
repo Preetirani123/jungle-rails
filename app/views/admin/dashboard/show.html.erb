@@ -1,6 +1,18 @@
-<h1>Admin::Dashboard#show</h1>
-<p>Find me in app/views/admin/dashboard/show.html.erb</p>
 
-<h1>Dashboard</h1>
-<h3> Categories available: <span class="label label-info"><a href=/admin/products><%= @categorys %></a></span></h3>
-<h3> Products available: <span class="label label-info"><a href=/admin/products><%= @products %></a></span></h3>
+<h3>DASHBOARD</h3>
+
+<table class = "table">
+   <thead>
+      <tr>
+         <th>NO. OF Categories </th>
+         <th>NO. OF Products</th>
+      </tr>
+   </thead>
+  
+   <tbody>
+      <tr>
+         <td><a href=/admin/products><%= @categorys %></a></td>
+         <td><a href=/admin/products><%= @products %></a></td>
+      </tr>
+   </tbody>
+</table>
