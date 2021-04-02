@@ -1,4 +1,9 @@
 class Sale < ActiveRecord::Base
+
+  def self.active
+    where("sales.starts_on <= ? AND sales.end_on >= ?", Date.current, Date.current)
+  end
+
   def finised?
     end_on < Date.current
   end
