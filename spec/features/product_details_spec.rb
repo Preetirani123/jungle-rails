@@ -25,7 +25,7 @@ RSpec.feature "Product details page", type: :feature, js: true do
     first('article.product').click_on 'Details'
     # DEBUG / VERIFY
     expect(page).to have_content '10'
-    save_screenshot
+    # save_screenshot
   end
 
   scenario "They see product page detail" do
@@ -35,6 +35,6 @@ RSpec.feature "Product details page", type: :feature, js: true do
     first('article.product').click_on 'Details'
     # DEBUG / VERIFY
     expect(page).to have_content '64.99'
-    save_screenshot
+    # save_screenshot
   end
 end
