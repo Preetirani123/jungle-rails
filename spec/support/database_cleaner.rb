@@ -1,5 +1,5 @@
 RSpec.configure do |config|
-
+  
   config.before(:suite) do
     if config.use_transactional_fixtures?
       raise(<<-MSG)
